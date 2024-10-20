@@ -1,0 +1,45 @@
+.item-list-container {
+    padding: 20px; /* Espacio alrededor del contenedor */
+    background-color: #f9f9f9; /* Color de fondo opcional */
+    border: 1px solid #ddd; /* Borde opcional */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Alinear texto al centro */
+}
+
+/* Estilo para la lista de productos */
+.item-list {
+    display: grid; /* Activar el uso de Grid */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las filas y columnas */
+}
+
+.item {
+    border: 1px solid #ddd; /* Borde para cada producto */
+    padding: 20px; /* Espacio interno para los productos */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Alinear texto al centro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto visual */
+    transition: transform 0.3s; /* Animación al pasar el mouse */
+}
+
+.item img {
+    max-width: 100%; /* Hacer que las imágenes se ajusten al contenedor */
+    height: auto; /* Mantener la proporción de las imágenes */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    
+}
+
+.item:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.item h2 {
+    font-size: 1.5rem; /* Tamaño del texto para el nombre del producto */
+    margin-bottom: 10px; /* Espacio debajo del nombre */
+}
+
+.item p {
+    font-size: 1rem; /* Tamaño del texto para el precio */
+    color: #555; /* Color del texto del precio */
+}

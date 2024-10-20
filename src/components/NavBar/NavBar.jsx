@@ -1,5 +1,6 @@
 import "./navbar.scss";
 import CartWidget from "./CartWidget.jsx";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const stylesH2 = { color: "red", fontSize: "40px" };
@@ -13,18 +14,18 @@ const NavBar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+      <Link to="/" className="nav-item">
+          <a className="nav-link" href="#">Home</a>
+        </Link>
+        <Link to="/category/accesorios" className="nav-item">
+          <a className="nav-link active" aria-current="page" href="#">Accesorios</a>
+        </Link>
+        <Link to="/category/vestimenta"  className="nav-item">
+          <a className="nav-link" href="#">Vestimenta</a>
+        </Link>
+        <Link to="/category/calzado" className="nav-item">
+          <a className="nav-link" href="#">Calzado</a>
+        </Link>
       </ul>
     </div>
   </div>
